@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="contact.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1 id="contact-heading">Contato</h1>
+            <p id="contact-description">Gostaria de saber mais sobre meu trabalho? Preencha o formulário abaixo ou entre em contato através das minhas redes sociais.</p>
+            
+            <form action="enviar-contato.php" method="POST" aria-labelledby="contact-heading" aria-describedby="contact-description">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="resume-link">
+                <p>Para mais detalhes sobre minha experiência e habilidades, <a href="https://karinacmartins.github.io/curriculo-web/" target="_blank">acesse meu currículo web</a>.</p>
+            </div>
+
+            <p>Se preferir entre em contato pelo e-mail: <a href="mailto:nina.kastro@icloud.com">nina.kastro@icloud.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. KM Todos os direitos reservados.</p>
+            <div class="social">
+                Made with 🤍
+                <a href="https://www.instagram.com/karinamartins_eu/" target="_blank" aria-label="Instagram de Karina Martins">
+                    <img src="../images/instagram.svg" alt="Ícone do Instagram de Karina Martins">
+                </a>
+                <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank" aria-label="LinkedIn de Karina Martins">
+                    <img src="../images/linkedin.svg" alt="Ícone do LinkedIn de Karina Martins">
+                </a>
+                <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins">
+                    <img src="../images/github.svg" alt="Ícone do GitHub de Karina Martins">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
