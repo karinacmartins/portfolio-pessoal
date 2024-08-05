@@ -243,6 +243,40 @@ button {
     cursor: pointer;
 }
 
+/* Estilos específicos para o formulário de contato */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: #f9f9f9a0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
 /* Estilos específicos para a página de confirmação */
 .confirmation {
     display: flex;

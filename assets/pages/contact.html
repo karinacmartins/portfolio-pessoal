@@ -20,32 +20,32 @@
     </header>
     <main>
         <section class="contact">
-            <h1 id="contact-heading">Contato</h1>
-            <p id="contact-description">Gostaria de saber mais sobre meu trabalho? Preencha o formulário abaixo ou entre em contato através das minhas redes sociais.</p>
             
-            <form action="confirm.html" method="GET" aria-labelledby="contact-heading" aria-describedby="contact-description">
-                <div>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
-                </div>
-                
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
-                </div>
-                
-                <div>
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required aria-required="true"></textarea>
-                </div>
-                
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
-                
-            </form>
+            <h1>Contato</h1>
+            <p>Gostaria de saber mais sobre meu trabalho? Preencha o formulário abaixo ou entre em contato através das minhas redes sociais.</p>
+           
+            <div class="contact-form">
+                <form class="contact-box" action="confirm.html" method="GET" aria-labelledby="contact-heading" aria-describedby="contact-description">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div>
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
 
-            
-            
             <div class="resume-link">
                 <p>Para mais detalhes sobre minha experiência e habilidades, <a href="https://karinacmartins.github.io/curriculo-web/" target="_blank">acesse meu currículo web</a>.</p>
             </div>
