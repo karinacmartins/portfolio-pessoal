@@ -172,6 +172,20 @@ nav ul li a {
     background-color: #ba55d3;
 }
 
+button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline-block; /* Faz com que o botão se comporte como um bloco em linha */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    margin: 4px 2px; /* Margem ao redor do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    border-radius: 12px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para as mudanças de cor e transformação */
+}
 
 .skills {
     margin-top: 3rem;
@@ -227,6 +241,51 @@ button {
     background-color: #ba55d3;
     color: #fff;
     cursor: pointer;
+}
+
+/* Estilos específicos para a página de confirmação */
+.confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.confirmation-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.confirmation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-box h1 {
+    color: #ba55d3;
+}
+
+.confirmation-box p {
+    color: #333;
+}
+
+.confirmation-box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ba55d3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-box a:hover {
+    background-color: #ba55d3;
 }
 
 footer {
@@ -410,6 +469,18 @@ a:hover {
 .profile-image:hover {
     transform: scale(1.1) rotate(360deg);
     opacity: 0.8;
+}
+
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse sobre o botão */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o botão de limpar */
+button[type="reset"]:hover {
+    background-color: #e53935; /* Cor de fundo ao passar o mouse sobre o botão de limpar */
 }
 
  /* Estilos de foco visíveis */
