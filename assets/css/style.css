@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    background-color: rgba(232, 189, 232, 0.651); /* Fundo semitransparente */
+    background-color: rgba(232, 189, 232, 0.651); 
     color: #f0ddee;
     padding: 1rem;
     text-align: right;
@@ -89,7 +89,7 @@ nav ul li a {
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s ;
 }
 
 
@@ -127,7 +127,7 @@ nav ul li a {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
         
     
 }
@@ -506,6 +506,8 @@ iframe {
     button {
         padding: 0.5rem 1rem;
     }
+
+    
 }
 
 
@@ -540,10 +542,27 @@ a:hover {
     color: #fff;
 }
 
+
+.profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+
 .profile-image:hover {
-    transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg)  ;
     opacity: 0.8;
+    content: url('../images/perfil.jpg');
+    background-size: cover;
 }
+
+
+
 
 
 button:hover {
