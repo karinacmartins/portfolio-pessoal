@@ -84,11 +84,12 @@ nav ul li a {
     
 }
 
-image-container {
+.image-container {
     display: flex;
     justify-content: center; 
     align-items: center;
     height: 150px; 
+    
 }
 
 .image-container a {
