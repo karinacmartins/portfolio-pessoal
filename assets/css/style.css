@@ -45,8 +45,6 @@ main {
     flex: 1;
     padding: 1rem;
     padding-top: 4rem;
-    pa
-    
     
 }
 
@@ -62,6 +60,7 @@ nav ul li {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 25px;
+    margin-top: 25px;
 
 }
 
@@ -73,6 +72,9 @@ nav ul li a {
 .intro, .about, .projects, .contact {
     padding: 1rem;
     text-align: center;
+    align-items: center;
+    justify-self: center;
+    position: relative;
 }
 
 .project img, .contact img {
@@ -82,13 +84,23 @@ nav ul li a {
     
 }
 
+image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 150px; 
+}
+
+.image-container a {
+    display: inline-block; 
+}
+
 .intro img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 50px;
     transition: transform 0.5s, opacity 0.5s ;
 }
 
