@@ -6,16 +6,16 @@ Seja muito bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido co
 
 ## Índice
 
-- [Objetivo](#🎯-objetivo)
-- [Descrição do Projeto](#📖-descrição-do-projeto)
-- [Tecnologias Utilizadas](#🛠️-tecnologias-utilizadas)
-- [Estrutura do Projeto](#🗂️-estrutura-do-projeto)
-- [Descrição das Páginas](#📄-descrição-das-páginas)
-- [Funcionalidades](#⚙️-funcionalidades)
-- [Funcionalidades Futuras](#🌟-funcionalidades-futuras)
-- [Contribuições](#🤝-contribuições)
-- [Contato](#📧-contato)
-- [Observações](#📝-observações)
+- Objetivo
+- Descrição do Projeto
+- Tecnologias Utilizadas
+- Estrutura do Projeto
+- Descrição das Páginas
+- Funcionalidades
+- Funcionalidades Futuras
+- Contribuições
+- Contato
+- Observações
 
 
 
@@ -99,7 +99,7 @@ Para perguntas ou feedback, entre em contato:
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/karinacmartins/)
 - **GitHub:** [GitHub](https://github.com/karinacmartins)
 
-## 📝 Observações
+## Observações
 
 - A página de **Contato** ainda não é funcional. O formulário redireciona para uma página de confirmação apenas para fins de demonstração.
 
