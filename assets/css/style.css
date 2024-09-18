@@ -233,29 +233,23 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+
 .skills {
-    margin-top: 3rem;
-}
-
-.skills h2 {
-    margin-bottom: 1rem;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
+    background-color: #ebe1ee9d;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+        
 }
 
-.skills ul li {
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-.skills ul li img {
+.skills img {
     width: 50px;
     height: 50px;
+    
 }
 
 
@@ -470,12 +464,17 @@ iframe {
         padding: 1rem;
     }
 
-    .skills ul {
-        flex-direction: column;
+    .skills {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; 
+        justify-items: center;
     }
 
-    .skills ul li {
-        margin: 0.5rem 0;
+    .skills img {
+        margin: 0.5rem;
+        margin-top: 20px;
+        
     }
 
     .project-timeline-section {
@@ -514,11 +513,19 @@ iframe {
        
     }
 
-    .skills ul li img {
-        width: 40px;
-        height: 40px;
+    .skills {
+        display: flex;
+        justify-content: center; 
+        gap: 10px; 
+        flex-wrap: wrap; 
     }
     
+    .skills img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
     button {
         padding: 0.5rem 1rem;
     }
