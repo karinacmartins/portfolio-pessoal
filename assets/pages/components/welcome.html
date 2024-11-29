@@ -1,0 +1,181 @@
+<style>
+  .decode-text {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+  .space {
+    display: inline-block;
+    width: 10px;
+  }
+
+  .text-animation {
+
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    text-transform: uppercase;
+
+    &:before {
+      content: "";
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #0e182d;
+      width: 0;
+      height: 1.2em;
+      -webkit-transform: translate(-50%, -55%);
+      -ms-transform: translate(-50%, -55%);
+      transform: translate(-50%, -55%);
+    }
+
+    &.state-1 {
+      &:before {
+        width: 1px;
+      }
+    }
+
+    &.state-2 {
+      &:before {
+        width: 0.9em;
+      }
+    }
+
+    &.state-3 {
+      color: black;
+
+      &:before {
+        width: 0;
+      }
+    }
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+  div {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    height: 50px;
+  }
+</style>
+
+<div class="decode-text">
+
+
+  <div class="text-animation">B</div>
+  <div class="text-animation">e</div>
+  <div class="text-animation">m</div>
+  <div class="space"></div>
+
+
+  <div class="text-animation">V</div>
+  <div class="text-animation">i</div>
+  <div class="text-animation">n</div>
+  <div class="text-animation">d</div>
+  <div class="text-animation">o</div>
+  <div class="space"></div>
+
+
+
+  <div class="text-animation">a</div>
+  <div class="text-animation">o</div>
+  <div class="space"></div>
+
+  <div class="text-animation">m</div>
+  <div class="text-animation">e</div>
+  <div class="text-animation">u</div>
+  <div class="space"></div>
+
+  <div class="text-animation">P</div>
+  <div class="text-animation">o</div>
+  <div class="text-animation">r</div>
+  <div class="text-animation">t</div>
+  <div class="text-animation">f</div>
+  <div class="text-animation">ó</div>
+  <div class="text-animation">l</div>
+  <div class="text-animation">i</div>
+  <div class="text-animation">o</div>
+  <div class="text-animation">!</div>
+  <div class="space"></div>
+
+</div>
+
+
+<script>
+
+  function decodeText() {
+    var text = document.getElementsByClassName('decode-text')[0];
+
+    var state = [];
+    for (var i = 0, j = text.children.length; i < j; i++) {
+      text.children[i].classList.remove('state-1', 'state-2', 'state-3');
+      state[i] = i;
+    }
+
+
+    var shuffled = shuffle(state);
+
+    for (var i = 0, j = shuffled.length; i < j; i++) {
+      var child = text.children[shuffled[i]];
+      classes = child.classList;
+
+
+      var state1Time = Math.round(Math.random() * (2000 - 300)) + 50;
+      if (classes.contains('text-animation')) {
+        setTimeout(firstStages.bind(null, child), state1Time);
+      }
+    }
+  }
+
+
+  function firstStages(child) {
+    if (child.classList.contains('state-2')) {
+      child.classList.add('state-3');
+    } else if (child.classList.contains('state-1')) {
+      child.classList.add('state-2')
+    } else if (!child.classList.contains('state-1')) {
+      child.classList.add('state-1');
+      setTimeout(secondStages.bind(null, child), 100);
+    }
+  }
+  function secondStages(child) {
+    if (child.classList.contains('state-1')) {
+      child.classList.add('state-2')
+      setTimeout(thirdStages.bind(null, child), 100);
+    }
+    else if (!child.classList.contains('state-1')) {
+      child.classList.add('state-1')
+    }
+  }
+  function thirdStages(child) {
+    if (child.classList.contains('state-2')) {
+      child.classList.add('state-3')
+    }
+  }
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
+
+  decodeText();
+  setInterval(function () { decodeText(); }, 10000);
+
+
+</script>

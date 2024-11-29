@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stilos-->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
     <header>
+        <!-- Seta para voltar ao topo -->
+        <button class="scroll-to-top" aria-label="Voltar ao topo" title="Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="../../index.html">Home</a></li>
@@ -20,55 +34,67 @@
     </header>
     <main>
         <section class="contact">
-            
-            <h1>Contato</h1>
-            <p>Gostaria de saber mais sobre meu trabalho? Preencha o formulário abaixo ou entre em contato através das minhas redes sociais no rodapé da página.</p>
-           
-            <div class="contact-form">
-                <form class="contact-box" action="confirm.html" method="GET" aria-labelledby="contact-heading" aria-describedby="contact-description">
-                    <div>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    
-                    <div>
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" required aria-required="true"></textarea>
-                    </div>
-                    
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </form>
+
+            <h1 class="title">Contato</h1>
+
+            <div class="form">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSffFWmbFydCcZEVTp6S4RfLv3iK1DkL_DTvuKnr3h6Ht441SA/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
 
             <div class="resume-link">
-                <p>Para mais detalhes sobre minha experiência e habilidades, <a href="https://karinacmartins.github.io/curriculo-web/" target="_blank">acesse meu currículo web</a>.</p>
+                <p>Para mais detalhes sobre minha experiência e habilidades, <a
+                        href="https://karinacmartins.github.io/curriculo-web/" target="_blank">acesse meu currículo
+                        web</a>.</p>
+                <p class="contact-email">
+                    Se preferir, entre em contato pelo e-mail:
+                    <a href="mailto:nina.kastro@icloud.com">nina.kastro@icloud.com</a>
+                </p>
             </div>
 
-            <p>Se preferir entre em contato pelo e-mail: <a href="mailto:nina.kastro@icloud.com">nina.kastro@icloud.com</a></p>
+
+
         </section>
     </main>
     <footer>
         <div class="footer-content">
             <p>&copy; 2024. KM Todos os direitos reservados.</p>
-            <div class="social">
-                Made with 🤍
-                <a href="https://www.instagram.com/karinamartins_eu/" target="_blank" aria-label="Instagram de Karina Martins">
-                    <img src="../images/instagram.svg" alt="Ícone do Instagram de Karina Martins">
-                </a>
-                <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank" aria-label="LinkedIn de Karina Martins">
-                    <img src="../images/linkedin.svg" alt="Ícone do LinkedIn de Karina Martins">
-                </a>
-                <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins">
-                    <img src="../images/github.svg" alt="Ícone do GitHub de Karina Martins">
-                </a>
-            </div>
-        </div>
-    </footer>
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; <span></span> . KM Todos os direitos reservados.</p>
+                    <div class="social">
+                        <span>Made with 🤍</span>
+        
+                        <!-- Link para o LinkedIn -->
+                        <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank"
+                            aria-label="LinkedIn de Karina Martins" class="tooltip">
+                            <img src="/assets/images/icons/linkedin-round-svgrepo-com.svg" alt="LinkedIn">
+                            <span class="tooltip-text">LinkedIn</span>
+                        </a>
+        
+                        <!-- Link para o GitHub -->
+                        <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins"
+                            class="tooltip">
+                            <img src="/assets/images/icons/github-round-svgrepo-com.svg" alt="GitHub">
+                            <span class="tooltip-text">GitHub</span>
+                        </a>
+        
+                        <!-- Link para o Instagram -->
+                        <a href="https://www.instagram.com/karinamartins_eu/" target="_blank"
+                            aria-label="Instagram de Karina Martins" class="tooltip">
+                            <img src="/assets/images/icons/instagram-round-svgrepo-com.svg" alt="Instagram">
+                            <span class="tooltip-text">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector('footer span').textContent = new Date().getFullYear();
+                </script>
+            </footer>
+
+
+    <script src="/assets/js/top.js"></script>
 </body>
+
 </html>

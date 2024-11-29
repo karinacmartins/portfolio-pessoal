@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karina Martins</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Stilos-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
     <header>
+        <!-- Seta para voltar ao topo -->
+        <button class="scroll-to-top" aria-label="Voltar ao topo" title="Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="index.html" aria-label="Página inicial" aria-current="page">Home</a></li>
@@ -19,41 +34,78 @@
         </nav>
     </header>
     <main>
+
+
+
+
+
         <section class="intro">
             <div class="image-container">
-                <a href="assets/pages/about.html" >
-                    <img  src="assets/images/pf.png" alt="Foto do avatar de Karina Martins, mostrando um retrato frontal" class="profile-image" id="profile-img">
+                <a href="assets/pages/about.html">
+                    <img src="assets/images/pf.png" alt="Foto do avatar de Karina Martins, mostrando um retrato frontal"
+                        class="profile-image" id="profile-img">
                 </a>
             </div>
-            <h1>Bem-vindo ao meu portfólio!</h1>
-            <div class="intro-content">        
-                <p>Estou começando minha carreira como desenvolvedora full stack, movida por uma paixão por tecnologia e inovação.</p>
-                <p>Este espaço é dedicado a mostrar meus primeiros passos no desenvolvimento web, onde compartilho projetos e aprendizados. Cada projeto representa um marco na minha jornada, e estou animada para continuar crescendo e aprimorando minhas habilidades.</p>
-                <p>Sinta-se à vontade para explorar meus trabalhos e entrar em contato. Adoraria colaborar e criar algo incrível com você!</p>
-            </div>  
-            <hr/>
-            <div class="iframe-container">
-                <h2>Status no GitHub</h2>
-                <iframe src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=karinacmartins&hide_title=true&show_icons=true&include_all_commits=false&count_private=true&line_height=25&hide=issues&bg_color=000&title_color=FF00F6&text_color=FFF&border_radius=3&border_color=36123c&icon_color=FF00F6&theme=jolly" title="Estatísticas do GitHub de Karina Martins" tabindex="0"></iframe>
+
+            <div class="content-container">
+                <iframe src="assets/pages/components/welcome.html" class="iframe-intro"></iframe>
+                <h1 class="title  hide" frameborder="0">Bem vindo ao meu Portfólio!</h1>
             </div>
+
+
+
+            <div class="intro-content">
+                <p>Estou no início da minha jornada como desenvolvedora full stack, motivada por uma paixão por
+                    tecnologia, inovação e a busca constante por aprendizado e crescimento profissional.</p>
+
+                <p>Este espaço é dedicado a apresentar meus primeiros passos no desenvolvimento web, com projetos que
+                    refletem minha evolução, curiosidade e dedicação em aprender tecnologias como HTML, CSS, JavaScript
+                    e muito mais. Cada projeto é uma oportunidade de superar desafios, explorar novas ideias e aplicar
+                    boas práticas no desenvolvimento de soluções funcionais e criativas.</p>
+
+                <p>Busco uma oportunidade de migrar para essa área e contribuir com meu entusiasmo e habilidades para
+                    criar algo significativo. Fique à vontade para explorar meus trabalhos e entrar em contato. Estou
+                    empolgada para colaborar e construir algo incrível com você!</p>
+
+            </div>
+
         </section>
     </main>
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024. KM Todos os direitos reservados.</p>
+            <p>&copy; <span></span> . KM Todos os direitos reservados.</p>
             <div class="social">
                 <span>Made with 🤍</span>
-                <a href="https://www.instagram.com/karinamartins_eu/" target="_blank" aria-label="Instagram de Karina Martins">
-                    <img src="assets/images/instagram.svg" alt="Ícone do Instagram de Karina Martins">
+
+                <!-- Link para o LinkedIn -->
+                <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank"
+                    aria-label="LinkedIn de Karina Martins" class="tooltip">
+                    <img src="assets/images/icons/linkedin-round-svgrepo-com.svg" alt="LinkedIn">
+                    <span class="tooltip-text">LinkedIn</span>
                 </a>
-                <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank" aria-label="LinkedIn de Karina Martins">
-                    <img src="assets/images/linkedin.svg" alt="Ícone do LinkedIn de Karina Martins">
+
+                <!-- Link para o GitHub -->
+                <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins"
+                    class="tooltip">
+                    <img src="assets/images/icons/github-round-svgrepo-com.svg" alt="GitHub">
+                    <span class="tooltip-text">GitHub</span>
                 </a>
-                <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins">
-                    <img src="assets/images/github.svg" alt="Ícone do GitHub de Karina Martins">
+
+                <!-- Link para o Instagram -->
+                <a href="https://www.instagram.com/karinamartins_eu/" target="_blank"
+                    aria-label="Instagram de Karina Martins" class="tooltip">
+                    <img src="assets/images/icons/instagram-round-svgrepo-com.svg" alt="Instagram">
+                    <span class="tooltip-text">Instagram</span>
                 </a>
             </div>
         </div>
+        <script>
+            document.querySelector('footer span').textContent = new Date().getFullYear();
+        </script>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/top.js"></script>
 </body>
+
 </html>
