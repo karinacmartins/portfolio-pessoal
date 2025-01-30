@@ -23,12 +23,12 @@
 .carousel-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center; 
+    justify-content: start; 
     transition: transform 0.3s ease; 
     width: 100%;
     gap: 10px;  
     padding: 0;    
-    margin-top: 10px;
+    margin-top: 10px;    
 }
 
 /* Estilo das Caixas de Projetos */
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.carousel-item:hover button {
+.carousel-item button:hover {
     transform: scale(1.05);    
     background-color: #333;
     color: #ddd;    

@@ -114,6 +114,19 @@
         height: 20px;
     }
 
+    .contato-container {
+        width: 90%; /* Garante que ocupe 90% da tela */
+    }
+
+    #contact-form {
+        width: 100%; /* Garante que ocupe toda a largura disponível */
+    }
+
+    .whatsapp-btn {
+        width: 50px; /* Reduz o tamanho do botão */
+        height: 50px; /* Reduz a altura do botão */
+    }
+
 
 }
 

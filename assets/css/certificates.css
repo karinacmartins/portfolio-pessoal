@@ -1,0 +1,282 @@
+.search-bar {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin: 1rem;
+    gap: 5px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ba55d3;
+    border-radius: 4px;
+}
+
+.filter-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-tags button {
+    background-color: #8c8c8c;
+    width: 120px;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-tags button:hover {
+    background-color: #ba55d3;
+}
+
+.search-bar select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ba55d3;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar select:focus {
+    outline: none;
+    border-color: #ba55d3;
+}
+
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.certificate {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;   
+    border-radius: 5px;
+}
+
+.certificate .info {
+    padding: 1rem;
+}
+
+.certificate .info h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.certificate .info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 30px;
+    font-family: Arial, sans-serif;
+}
+
+#pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    border-color: #bbb;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #ba55d3;
+    color: white;
+    border-color: #ba55d3;
+}
+
+#pagination #pageNumbers button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#pagination #pageNumbers button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    border-color: #bbb;
+}
+
+#pagination #pageNumbers button:hover:not(:disabled) {
+    background-color: #ba55d3;
+    color: white;
+    border-color: #ba55d3;
+}
+
+.scroll-to-top {
+    display: none; 
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold; 
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1002;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top i {
+    font-size: 2rem; 
+  }
+  
+  .scroll-to-top:hover {
+    color: #211524;
+  }
+  
+  /* Tooltip personalizado */
+  .scroll-to-top[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #211524;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .search-bar input {       
+        font-size: 0.9rem;
+    }
+
+    .filter-tags {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-tags button {
+        width: 90vw;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .filter-tags select {
+        
+        margin: 0 auto;
+    }
+
+    .certificates-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .certificate {
+        width: 90%;
+        height: auto;
+    }
+
+    .pagination button {
+        padding: 0.5rem;        
+    }
+
+    .certificates {
+        margin-bottom: 60px;
+    }
+
+
+}
+
+/* Ajustes para telas muito pequenas (ex: smartphones em modo retrato) */
+@media (max-width: 480px) {
+    header {
+        padding: 0.8rem;
+    }
+
+    .certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .pagination button {
+        padding: 1px;
+        font-size: 0.8rem;        
+    }
+
+    
+}

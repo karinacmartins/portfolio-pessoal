@@ -1,0 +1,127 @@
+#contato {    
+    padding: 10px;   
+    text-align: center;     
+}
+
+#contato h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+/* Contêiner principal da seção de contato */
+.contato-container {
+    display: flex; 
+    flex-direction: column; 
+    margin: 10px auto; 
+    width: 50%; 
+    text-align: left; 
+    gap: 5px; 
+    font-size: 1em; 
+    color: #4a4a4a; 
+}
+
+.contato-container p {
+    color: #fff; 
+}
+
+/* Estilo do formulário de contato */
+#contact-form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* Estilo para os rótulos (labels) */
+#contact-form label {
+    font-size: 1rem; 
+    margin-bottom: 5px; 
+}
+
+/* Estilo para campos de entrada (input e textarea) */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem; 
+    border: 1px solid #ba55d3; 
+    border-radius: 4px; 
+}
+
+/* Botões do formulário */
+.buttons {
+    display: flex; 
+    justify-content: center;
+    margin-top: 1rem; 
+    align-items: center; 
+    gap: 15px; 
+    width: 100%; 
+}
+
+/* Estilo para o botão */
+#contact-form button {
+    padding: 10px; 
+    font-size: 1rem;
+    width: 40%; 
+    background-color: #4a4a4a; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse no botão */
+#contact-form button:hover {
+    background-color: #ba55d3;     
+}
+
+
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-btn {
+    position: fixed; 
+    bottom: 40px; 
+    right: 20px; 
+    width: 60px; 
+    height: 60px; 
+    z-index: 1000;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    animation: vibrate-interval 3s ease-in-out infinite;
+}
+
+.whatsapp-btn img {
+    width: 70%; 
+    height: 70%; 
+}
+
+
+@keyframes vibrate-interval {
+    0%, 100% {
+        transform: translate(0, 0); 
+    }
+    10% {
+        transform: translate(-3px, 0); 
+    }
+    20% {
+        transform: translate(3px, 0); 
+    }
+    30% {
+        transform: translate(-3px, 0);
+    }
+    40% {
+        transform: translate(3px, 0);
+    }
+    
+    50%, 100% {
+        transform: translate(0, 0); 
+    }
+}

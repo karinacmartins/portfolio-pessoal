@@ -6,20 +6,6 @@ Seja muito bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido co
 
 <img src="assets/images/pagina.png" alt="Print do Site" width="400" />
 
-## Índice
-
-- Objetivo
-- Descrição do Projeto
-- Tecnologias Utilizadas
-- Estrutura do Projeto
-- Descrição das Páginas
-- Funcionalidades
-- Funcionalidades Futuras
-- Contribuições
-- Contato
-- Observações
-
-
 
 ## 🎯 Objetivo
 
@@ -35,22 +21,11 @@ Este portfólio foi construído como um site estático utilizando HTML e CSS, co
 
 Durante o desenvolvimento, tomei cuidado para garantir que o layout fosse adaptável a diferentes dispositivos, proporcionando uma experiência consistente tanto em desktops quanto em dispositivos móveis. Para isso, utilizei práticas modernas de CSS, como media queries e flexbox, que permitiram ajustar o design conforme a resolução da tela, mantendo a estética e a funcionalidade.
 
-Além disso, o portfólio apresenta seções dedicadas ao meu perfil, projetos e formas de contato. Cada seção foi planejada para comunicar informações relevantes de maneira objetiva, com ênfase em clareza visual e organização de conteúdo. A página de contato, por exemplo, embora ainda não seja funcional, inclui um formulário estilizado que redireciona para uma página de confirmação, servindo como uma demonstração do que será implementado no futuro.
+O portfólio apresenta seções dedicadas ao meu perfil, projetos e formas de contato, cuidadosamente estruturadas para transmitir informações de forma clara e objetiva, com foco na organização e na clareza visual. A página de contato conta com um **formulário personalizado** desenvolvido com MailJS, permitindo o envio de mensagens diretamente pelo site. Além disso, inclui um **botão animado** que direciona os visitantes para o WhatsApp, tornando a interação mais ágil e prática. Também disponibilizei meu [currículo em PDF](assets/file/curriculo-karina.pdf) para quem desejar consultar.
 
 Todo o projeto reflete meu compromisso com boas práticas de desenvolvimento web, como o uso de uma estrutura semântica de HTML e o cuidado com a acessibilidade, assegurando que o site seja utilizável por todas as pessoas.
 
-### Melhorias Recentes:
-- **Design Modernizado:** Refinamento visual e aprimoramento da usabilidade.
-- **Galeria em Carrossel:** Implementada com JavaScript para apresentar os projetos.
-- **Objetos Dinâmicos:** Base de dados inclusa para carregar informações de projetos dinamicamente.
-- **Botão "Voltar ao Topo":** Adicionada uma seta fixa no final da página para facilitar a navegação.
-- **Formulário Temporário:** Incluído formulário do Google Forms até que eu adquira mais habilidades para criar um formulário personalizado.
-- **Reorganização do Código:** Melhorias na estrutura de pastas e organização do código.
-- **Retirada da Página de Confirmação:** Para simplificar a navegação.
-
-
 ## 🛠️ Tecnologias Utilizadas 
-
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS-239120?logo=css3&logoColor=white&style=for-the-badge)
@@ -59,31 +34,14 @@ Todo o projeto reflete meu compromisso com boas práticas de desenvolvimento web
 - **HTML5**: Para a estruturação do conteúdo.
 - **CSS3**: Para estilização e design responsivo.
 - **JavaScript**: Para adicionar interatividade e funcionalidades dinâmicas.
-## 🗂️ Estrutura do Projeto 
-
-A organização dos arquivos no projeto é a seguinte:
-```bash
-| index.html
-| README.md
-| assets/
-| ├── css/
-| │   └── [stilos]
-| ├── images/
-| │   └── [imagens]
-| ├── js/
-| │   └── [scripts]
-| └── pages/
-|     └── [páginas] 
-```
-
 
 ## 📄 Descrição das Páginas 
 
 - **`index.html`**: Página inicial do portfólio.  
 - **`about.html`**: Seção sobre mim.  
 - **`projects.html`**: Galeria de projetos com carrossel dinâmico.  
-- **`contact.html`**: Página de contato, com formulário temporário do Google Forms.  
-
+- **`certificates.html`**: Galeria de certificados dinâmica, com filtros e integrada a uma API. 
+- **`contact.html`**: Criado um formulário funcional utilizando MailJS.  
 
 ## ⚙️ Funcionalidades 
 
@@ -91,16 +49,8 @@ A organização dos arquivos no projeto é a seguinte:
 - **Carrossel de Projetos**: Apresentação dinâmica de projetos com JavaScript.  
 - **Botão "Voltar ao Topo"**: Facilita a navegação para o início da página.  
 - **Foto de Perfil Dinâmica**: Troca ao passar o mouse, utilizando apenas CSS.  
-- **Formulário Temporário**: Google Forms integrado enquanto o formulário personalizado não é finalizado.  
-
-
-## 🌟 Funcionalidades Futuras
-
-- **Página de Certificados**: Planejo incluir uma nova página para destacar meus certificados.  
-- **Formulário Personalizado**: Criar um formulário funcional utilizando tecnologias modernas.  
-- **Melhorias de Acessibilidade**: Ajustar ainda mais o site para atender a padrões elevados de acessibilidade.  
-- **Novas Animações**: Tornar a experiência mais interativa com transições e efeitos visuais.  
-
+- **Página de Certificados**: Adicionei uma nova seção para exibir meus certificados.
+- **Formulário Personalizado**: Desenvolvi um formulário funcional utilizando MailJS. 
 
 ## 🤝 Contribuições
 
@@ -119,8 +69,7 @@ Para perguntas ou feedback, entre em contato:
 
 ## Observações
 
-- A página de **Contato** inclui um formulário temporário do Google Forms e será aprimorada em breve.  
-- O projeto está em constante evolução, e novas funcionalidades serão adicionadas conforme meu progresso.  
+- O projeto está em constante evolução, com atualizações e novas funcionalidades sendo implementadas à medida que avanço no meu aprendizado e na aplicação de novas tecnologias.
 
 <br>
 <br>

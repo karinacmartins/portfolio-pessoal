@@ -2,6 +2,41 @@
 export const projetos = [
     
     {
+        titulo: "Site para Fisioterapeuta",
+        descricao: "Este é um template moderno e responsivo criado para profissionais liberais, autônomos e pequenos comércios. Este exemplo foi desenvolvido para uma fisioterapeuta, mas pode ser facilmente adaptado para outras áreas.",
+        imagem: "/assets/images/img-projects/fisioterapia.png",
+        link: "https://template1-fisioterapia.vercel.app/",
+        repositorio: "https://github.com/karinacmartins/template1",
+    },
+    {
+        titulo: "Ordem dos Livros",
+        descricao: "O Ordem dos Livros é um site interativo e responsivo que apresenta as séries de livros organizadas por ordem cronológica de leitura. Cada livro conta com informações e links para compra na Amazon, promovendo uma experiência prática e intuitiva.",
+        imagem: "/assets/images/img-projects/ordemlivros.png",
+        link: "https://ordem-dos-livros.netlify.app/",
+        repositorio: "https://github.com/karinacmartins/ordem-dos-livros",
+    },
+    {
+        titulo: "Instabytes",
+        descricao: "InstaBytes é uma aplicação web que permite aos usuários compartilhar fotos com legendas geradas automaticamente utilizando a API do Google Gemini. O projeto foca no desenvolvimento e integração de um back-end funcional com um front-end pronto, simulando a experiência de uma rede social.",
+        imagem: "/assets/images/img-projects/instabyte.png",
+        link: "https://instabyte-frontend.netlify.app/",
+        repositorio: "https://github.com/karinacmartins/instabyte-front-end",
+    },
+    {
+        titulo: "Mundo Invertido",
+        descricao: "O Mundo Invertido é uma aplicação simples, mas divertida, que remete ao universo de Stranger Things. Nela, os jogadores interagem com um mini jogo onde é necessário caçar o Demogorgon, que aparece em posições aleatórias dentro de uma área de jogo. O tempo é limitado, e a pontuação aumenta conforme o jogador acerta o Demogorgon. Ao final do jogo, o usuário pode optar por reiniciar ou sair.",
+        imagem: "/assets/images/img-projects/mundo-invertido.png",
+        link: "https://mundo-invertido-delta.vercel.app/",
+        repositorio: "https://github.com/karinacmartins/mundo-invertido",
+    },
+    {
+        titulo: "Spider-Man Multiverses",
+        descricao: "Este projeto é uma aplicação interativa que permite aos usuários explorar diversas versões do Homem-Aranha através de uma interface visualmente atraente. Com isso, buscamos proporcionar uma experiência divertida e imersiva sobre o multiverso do herói.",
+        imagem: "/assets/images/img-projects/spider.png",
+        link: "https://spider-man-dio.vercel.app/",
+        repositorio: "https://github.com/karinacmartins/spider-man-dio",
+    },
+    {
         titulo: "Farmácia Viva Vida",
         descricao: "Este é um projeto desenvolvido como parte do curso de Gestão em Tecnologia da Informação da Universidade Cruzeiro do Sul. O objetivo do projeto é criar um site institucional para uma farmácia, proporcionando aos clientes uma experiência fácil e eficiente ao navegar por medicamentos, promoções e serviços oferecidos pela farmácia.",
         imagem: "/assets/images/img-projects/farmacia.png",  

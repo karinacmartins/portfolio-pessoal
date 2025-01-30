@@ -12,6 +12,7 @@
     <!-- Stilos-->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -25,10 +26,12 @@
         </button>
         <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html" aria-current="page">Contato</a></li>
+                <li><a href="../../index.html" aria-label="Página inicial">Home</a></li>
+                <li><a href="about.html" aria-label="Sobre Karina Martins" aria-current="page">Sobre</a></li>
+                <li><a href="projects.html" aria-label="Projetos de Karina Martins">Projetos</a></li>
+                <li><a href="certificates.html" aria-label="Certificados de Karina" aria-current="page">Certificados</a>
+                </li>
+                <li><a href="contact.html" aria-label="Página de contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -37,20 +40,45 @@
 
             <h1 class="title">Contato</h1>
 
-            <div class="form">
+            <!-- Formulário do google:
+             <div class="form">
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSffFWmbFydCcZEVTp6S4RfLv3iK1DkL_DTvuKnr3h6Ht441SA/viewform?embedded=true"
                     frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-            </div>
+            </div> -->
+
+            <a href="https://wa.me/5511947133156" class="whatsapp-btn" target="_blank"
+            aria-label="Enviar mensagem pelo WhatsApp">            
+            <img src="/assets/images/icons/whatsapp.svg" alt="Ícone do WhatsApp">           
+        </a>
+
+            <form id="contact-form" aria-labelledby="contact-form-title">               
+
+                <h3 id="contact-form-title" class="visually-hidden">Formulário de Contato</h3>                
+
+                <label for="name">Nome:</label>                
+                <input type="text" id="name" name="name" required aria-required="true"><label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                
+                <div class="buttons">
+                    <button class="button-contact" type="button" id="clear-btn" aria-label="Limpar o formulário">Limpar</button>
+                    <button class="button-contact" type="submit" aria-label="Enviar mensagem">Enviar</button>
+                </div>
+
+            </form>
+
 
             <div class="resume-link">
-                <p>Para mais detalhes sobre minha experiência e habilidades, <a
-                        href="https://karinacmartins.github.io/curriculo-web/" target="_blank">acesse meu currículo
-                        web</a>.</p>
-                <p class="contact-email">
-                    Se preferir, entre em contato pelo e-mail:
-                    <a href="mailto:nina.kastro@icloud.com">nina.kastro@icloud.com</a>
-                </p>
+
+                <p>
+                    <strong>Para vizualizar e baixar meu currículo,</strong> 
+                    <a href="/assets/file/curriculo-karina.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir currículo">
+                        acesse aqui.
+                    </a>
+                </p>                     
+            
             </div>
 
 
@@ -65,21 +93,21 @@
                     <p>&copy; <span></span> . KM Todos os direitos reservados.</p>
                     <div class="social">
                         <span>Made with 🤍</span>
-        
+
                         <!-- Link para o LinkedIn -->
                         <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank"
                             aria-label="LinkedIn de Karina Martins" class="tooltip">
                             <img src="/assets/images/icons/linkedin-round-svgrepo-com.svg" alt="LinkedIn">
                             <span class="tooltip-text">LinkedIn</span>
                         </a>
-        
+
                         <!-- Link para o GitHub -->
-                        <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins"
-                            class="tooltip">
+                        <a href="https://github.com/karinacmartins" target="_blank"
+                            aria-label="GitHub de Karina Martins" class="tooltip">
                             <img src="/assets/images/icons/github-round-svgrepo-com.svg" alt="GitHub">
                             <span class="tooltip-text">GitHub</span>
                         </a>
-        
+
                         <!-- Link para o Instagram -->
                         <a href="https://www.instagram.com/karinamartins_eu/" target="_blank"
                             aria-label="Instagram de Karina Martins" class="tooltip">
@@ -94,7 +122,9 @@
             </footer>
 
 
-    <script src="/assets/js/top.js"></script>
+            <script src="/assets/js/top.js"></script>
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script src="/assets/js/mails.js"></script>
 </body>
 
 </html>

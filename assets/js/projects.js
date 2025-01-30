@@ -31,6 +31,8 @@ function criarCarrossel() {
         // Adicionar o item ao carrossel
         carouselWrapper.appendChild(projetoDiv);
     });
+
+    
 }
 
 // Chamar a função para criar o carrossel ao carregar a página
