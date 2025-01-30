@@ -1,6 +1,6 @@
 # Portfólio Pessoal 
 
-### ![Logo](assets/images/favicon.png) MY Portfolio: 
+### ![Logo](assets/images/favicon.png) MY Portfolio 
 
 Seja muito bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido como parte do programa **"Além do Próximo Passo"** da empresa em que trabalho. Já estava pensando em criar esse portfólio há algum tempo, e esse programa foi a motivação perfeita para iniciar o desenvolvimento.
 
