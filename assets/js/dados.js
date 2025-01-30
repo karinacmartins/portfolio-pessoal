@@ -4,7 +4,7 @@ export const projetos = [
     {
         titulo: "Site para Fisioterapeuta",
         descricao: "Este é um template moderno e responsivo criado para profissionais liberais, autônomos e pequenos comércios. Este exemplo foi desenvolvido para uma fisioterapeuta, mas pode ser facilmente adaptado para outras áreas.",
-        imagem: "/assets/images/img-projects/fisioterapia.png",
+        imagem: "/assets/images/img-projects/fisio.png",
         link: "https://template1-fisioterapia.vercel.app/",
         repositorio: "https://github.com/karinacmartins/template1",
     },
